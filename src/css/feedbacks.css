@@ -56,6 +56,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .feedbacks-container {
+  padding: 64px 16px;
+}
   .feedbacks-title {
     max-width: 560px;
   }
@@ -79,6 +82,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+
   .feedbacks-title {
     font-size: 48px;
   }
