@@ -1,0 +1,16 @@
+.feedbacks-container {
+  padding: 32px 16px;
+}
+
+.feedbacks-title {
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.star {
+  fill: #3ac04c;
+}
