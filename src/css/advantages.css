@@ -1,4 +1,3 @@
-
 .advantages-container {
     display: flex;
     padding: 32px 16px;
@@ -78,50 +77,62 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-
-  .advantages-container {
+ .advantages-container {
     max-width: 768px;
     padding: 64px 32px;
-    row-gap: 48px;
-  }
-
-  .sign {
+    row-gap: 32px;
+ }  
+ .sign {
+    min-width: 704px;
+    height: 194px;       
+ } 
+ .subtitle {   
+    padding-bottom: 16px;
+ }
+ .title-advantage {    
+    padding-bottom: 24px;
+ }
+ .text-advantages-explenation {
+    font-size: 18px; 
+ }
+ .equities-list {
     width: 100%;
-  }
-
-  .equities-list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-
-  .equities-item {
-    display: flex;
-    flex-direction: column;
+    height: 902px;    
+    flex-direction: row;
+    flex-wrap: wrap;
     row-gap: 24px;
+    column-gap: 24px;
+    list-style: none;
   }
-
-   .advantages-img {
-    width: 100%;
-    max-width: 336px;
-    height: auto;
-    border-radius: 32px;
+  .equities-item {
+    display: block;
+    width: calc((100% - 24px) / 2); 
+    height: 361px;
+    row-gap: 32px;      
+  } 
+  .last-child {
+     width: 100%;
+     height: 516px;  
   }
-
-   .equities-item.last-child {
-    grid-column: 1 / -1;
+ .advantages-img {
+    width: 340px;
+    height: 201px;
+    padding-bottom: 32px;
+  }  
+  .advantages-img-third {
+    width: 704px;
+    height: 417px;
   }
-
-  .equities-item.last-child .advantages-img {
-    max-width: 704px; 
-    width: 100%;
+  .equities-item-description { 
+     height: 128px;     
+  }  
+  .equities-item-description :last-child {
+     height: 68px;
   }
 }
 
- @media screen and (min-width: 1440px) {
-
-  .advantages-container {
+@media screen and (min-width: 1440px) {
+ .advantages-container {
     max-width: 1440px;
     padding: 64px;
     row-gap: 80px;
@@ -136,17 +147,14 @@ p {
     width: 1312px;
     height: 447px;
   }
-
-  .equities-item {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
+ .equities-item {
+    width: calc((100% - 48px) / 3); 
+    height: 447px;
+    column-gap: 24px;       
   }
   .advantages-img {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    border-radius: 32px;
+    width: 421px;
+    height: 249px;    
   }
  .equities-item-description {
     height: 166px;  
