@@ -132,8 +132,11 @@ p {
   }
 }
 
+<<<<<<<<< Temporary merge branch 1
+@media screen and (min-width: 1158px) {
+=========
 @media screen and (min-width: 1440px) {
-
+>>>>>>>>> Temporary merge branch 2
  .advantages-container {
     max-width: 1440px;
     padding: 64px;
