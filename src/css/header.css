@@ -80,7 +80,10 @@
   .burger-btn {
     display: none;
   }
-
+  .logo-icon {
+    width: 106.51px;
+    height: 45.65px;
+  }
   .nav-list-header {
     display: flex;
     align-items: center;
