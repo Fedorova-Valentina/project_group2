@@ -1,27 +1,23 @@
 
 .about{
-    padding: 64px 0;
-     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    image-set(
-      url("../img/about/about1x.jpg") 1x,
-      url("../img/about/about2x.jpg") 2x
-    );
-      background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  max-width: 767px;
-  height: 100%;
- 
-
+padding: 64px 0;
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+url("../img/about/about1x.jpg");
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+image-set("../img/about/about1x.jpg" 1x,
+"../img/about/about2x.jpg" 2x);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100%;
+max-width: 767px;
+height: 100%;
 }
 
 .title-about{
-   
-    font-weight: 600;
+font-weight: 600;
 font-size: 16px;
 line-height: 1.5;
 text-align: center;
@@ -30,8 +26,8 @@ padding-bottom: 12px;
 }
 
 .about-subtitle{
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
+font-family: "Comfortaa", sans-serif;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 letter-spacing: 0.01em;
@@ -40,7 +36,7 @@ color: #fff;
 padding-bottom: 20px;
 }
 .about-text{
-    font-weight: 400;
+font-weight: 400;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
@@ -48,66 +44,52 @@ color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-  .about-container{
-    width: 573px;
+.about-container{
+width: 573px;
 }
-    .about{
-        padding: 80px 0;
-     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    image-set(
-      url("../img/about/feature_1x_tablet.jpg") 1x,
-      url("../img/about/feature_2x_tablet.jpg") 2x
-    );
-  max-width: 1439px;
-  
-
+.about{
+padding: 80px 0;
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+url("../img/about/feature_1x_tablet.jpg");
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+image-set("../img/about/feature_1x_tablet.jpg" 1x,
+"../img/about/feature_2x_tablet.jpg" 2x);
+max-width: 1439px;
 }
 .title-about{
-
 padding-bottom: 16px;
 }
 
 .about-subtitle{
-
 padding-bottom: 24px;
 }
 .about-text{
 
-
-
 }
 }
 @media screen and (min-width: 1440px) {
- 
-    .about{
-        padding: 112px 0 94px;
-     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    image-set(
-      url("../img/about/feature1x_desctop.jpg") 1x,
-      url("../img/about/feature2x_desctop.jpg") 2x
-    );
+.about{
+padding: 112px 0 94px;
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+url("../img/about/feature1x_desctop.jpg");
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+image-set("../img/about/feature1x_desctop.jpg" 1x,
+"../img/about/feature2x_desctop.jpg" 2x);
   max-width: 100%;
-  
-
 }
 .title-about{
 
 }
 
-.about-subtitle{
-    
-    font-size: 56px;
+.about-subtitle{    
+font-size: 56px;
 
 }
 .about-text{
 font-size: 18px;
-
-
 }
 }
