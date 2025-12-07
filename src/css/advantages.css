@@ -6,6 +6,7 @@
     align-content: center;
     flex-direction: column;
     row-gap: 48px; 
+
 }
 .sign {
     min-width: 288px;
@@ -130,7 +131,6 @@ p {
      height: 68px;
   }
 }
-
 
 @media screen and (min-width: 1440px) {
 
