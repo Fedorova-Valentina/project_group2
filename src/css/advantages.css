@@ -10,7 +10,7 @@
 }
 .sign {
     min-width: 288px;
-    height: auto;
+    height: 272px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -39,26 +39,27 @@ p {
   font-family: 'Fira Sans';
 }
 .equities-list {
-    width: 288px;
+    min-width: 288px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     row-gap: 48px;
 }
 .advantages-img {
     display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 32px;  
+    height: 198px;
+    min-width: 288px;
+    border-radius: 32px; 
+    padding-bottom: 8px; 
 }
 .equities-item {
     width: 100%;
-    display: flex;
+    display: block;
+    box-sizing: border-box;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 8px;
+    justify-content: flex-start;
+    flex-direction: column;    
 }
 .equities-item-description {
     display: flex;
@@ -77,50 +78,52 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-
-  .advantages-container {
+ .container {
     max-width: 768px;
     padding: 64px 32px;
-    row-gap: 48px;
-  }
-
-  .sign {
-    width: 100%;
-  }
-
-  .equities-list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-
-  .equities-item {
-    display: flex;
-    flex-direction: column;
+    row-gap: 32px;
+ }  
+ .sign {
+    min-width: 704px;
+    height: auto;       
+ } 
+ .subtitle {   
+    padding-bottom: 16px;
+ }
+ .title-advantage {    
+    padding-bottom: 24px;
+ }
+ .text-advantages-explenation {
+    font-size: 18px; 
+ }
+ .equities-list {
+    width: 100%;    
+    flex-direction: row;
+    flex-wrap: wrap;
     row-gap: 24px;
   }
-
-   .advantages-img {
-    width: 100%;
-    max-width: 336px;
+  .equities-item {
+    display: block;
+    width: calc((100% - 24px) / 2); 
     height: auto;
-    border-radius: 32px;
+    min-width: 320px;    
+    row-gap: 32px;      
+  } 
+  .advantages-img {
+    width: 340px;
+    height: 201px;
   }
-
-   .equities-item.last-child {
-    grid-column: 1 / -1;
-  }
-
-  .equities-item.last-child .advantages-img {
-    max-width: 704px; 
+  .equities-list.equities-item:last-child {
     width: 100%;
+    height: auto;
+   }
+  .equities-item-description {
+     height: 128px;     
   }
 }
 
- @media screen and (min-width: 1440px) {
-
-  .advantages-container {
+ @media screen and (min-width: 1158px) {
+ .container {
     max-width: 1440px;
     padding: 64px;
     row-gap: 80px;
@@ -132,18 +135,14 @@ p {
     grid-template-columns: repeat(3, 1fr); 
     gap: 32px;
   }
-
-  .equities-item {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
+ .equities-item {
+    width: calc((100% - 48px) / 3); 
+    row-gap: 24px;   
   }
 
   .advantages-img {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    border-radius: 32px;
+    width: 421px;
+    height: 201px;
   }
 
   .equities-item.last-child {
