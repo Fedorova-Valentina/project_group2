@@ -1,3 +1,78 @@
-<section class="support">
+<section id="support" class="support">
+    <div class="container support-container">
+        <div class="support-content">
+            <h2 class="header-support">
+                Залишились питання? Зв'яжіться з нами!
+            </h2>
+            <p class="part-support">
+                Ми тут, щоб допомогти!
+            </p>
+            <form class="support-form">
+                <div class="form-row">
+                    <div class="container-label">
+                        <label class="label-support" for="user-name">
+                            Ім'я
+                        </label>
+                        <input class="input-name" 
+                        id="user-name" 
+                        name="user-name" 
+                        type="text" 
+                        placeholder="Іван" 
+                        minlength="5"
+                        maxlength="64"
+                          required />
+                    </div>
+                    <div class="container-label">
+                        <label class="label-support" for="user-email">
+                            Електронна пошта
+                        </label>
+                        <div class="input-wrapper"> 
+                            <input class="input-name email-input" id="user-email" name="user-email" type="email"
+                                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                                placeholder="hello@ecotote.com" required />
+                            <p class="text-valid">Email валідний!</p>
+                            <p class="text-invalid">Невірний email, спробуйте ще раз</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-comment">
+                    <label class="label-support" for="user-comment">
+                        Повідомлення
+                    </label>
+                    <textarea class="modal-textarea" id="user-comment" name="user-comment"
+                        placeholder="Введіть своє повідомлення..."></textarea>
+                </div>
+                <button class="button-send" type="submit">
+                    Надіслати
+                </button>
+            </form>
+        </div>
+        <div class="container-image-support">
+            <picture>
+                <source srcset="
+                /img/support/studio_space_with_sketches_1x_desctop.jpg 1x,
+                /img/support/studio_space_with_sketches_2x_desctop.jpg 2x"
+                media="(min-width: 1440px)"
+                width="644"
+                height="767"
+                />
+                <source srcset="
+                                /img/support/studio_space_1x_tablet.jpg 1x,
+                                /img/support/studio_space_2x_tablet.jpg 2x" 
+                                media="(min-width: 768px)" 
+                                width="704"
+                    height="428" />
 
+                    <source srcset="
+                                                    /img/support/support1x.jpg 1x,
+                                                    /img/support/support2x.jpg 2x" 
+                                                    media="(max-width: 767px)" 
+                                     />
+                        <img class="support-img" src="/src/img/support/support1x.jpg"
+                        alt="Робоче місце"
+                        width="288"
+          height="428" />
+            </picture>
+        </div>
+    </div>
 </section>
