@@ -133,7 +133,6 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
-
  .advantages-container {
     max-width: 1440px;
     padding: 64px;
